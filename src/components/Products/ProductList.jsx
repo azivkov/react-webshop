@@ -1,6 +1,6 @@
 function ProductList() {
     return(
-        <div>This is the list of products.</div>
+        <h1>This is the list of products.</h1>
     )
 }
 

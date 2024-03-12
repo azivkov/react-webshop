@@ -9,7 +9,24 @@ const images = {
     product2: "https://i.imgur.com/om4R045.jpg",
     product3: "https://i.imgur.com/QioYljt.jpg",
     product4: "https://i.imgur.com/FT4Ltdj.jpg",
-    product5: "https://i.imgur.com/yKpyPz0.png"
+    product5: "https://i.imgur.com/yKpyPz0.png",
+    category1: "https://i.imgur.com/6a1MElG.jpg",
+    category2: "https://i.imgur.com/MePRX4n.jpg",
+    category3: "https://i.imgur.com/faT7ltu.jpg",
+    category4: "https://i.imgur.com/40qlmlO.jpg",
+    category5: "https://i.imgur.com/O2b3eo7.png",
+    category6: "https://i.imgur.com/mMRP7mh.jpg",
+    category7: "https://i.imgur.com/zMNtmno.jpg",
+    category8: "https://i.imgur.com/wWtzK7k.jpg",
+    category9: "https://i.imgur.com/QB7Am2J.jpg",
+    gamingCategory1: "https://i.imgur.com/GKcj7in.jpg",
+    gamingCategory2: "https://i.imgur.com/hXYf1KB.jpg",
+    gamingCategory3: "https://i.imgur.com/V3w9vCM.jpg",
+    gamingCategory4: "https://i.imgur.com/f6rCi0P.png",
+    gamingCategory5: "https://i.imgur.com/bVYKgmW.jpg",
+    about1: "https://i.imgur.com/SJlr0ur.jpg",
+    about2: "https://i.imgur.com/eNJGwKE.jpg",
+    contact: "https://i.imgur.com/nur7OOV.jpg"
 }
 
 export {images}

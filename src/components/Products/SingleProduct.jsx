@@ -1,6 +1,6 @@
 function SingleProduct() {
     return(
-        <div>This is a single product.</div>
+        <h1>This is a single product.</h1>
     )
 }
 

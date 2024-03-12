@@ -1,10 +1,10 @@
-function FooterContact({contact}) {
+function FooterContact({title, contact}) {
     return(
-        <div class="kontakt">
-        <h3>Kontakt informacije</h3>
+        <div className={"kontakt"}>
+        <h3>{title}</h3>
         <ul>
             {contact.map((item,index) => (
-                <li key={index}>{item}</li>
+                <li key={index}><span>{item.type}</span>{item.info}</li>
             ))}
         </ul>
     </div>

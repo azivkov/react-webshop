@@ -1,0 +1,139 @@
+
+.checkout-container {
+    width: 65vw;
+    margin: 0 auto;
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.checkout-container .container {
+    display: flex;
+    box-shadow: 0.5px 0.5px 5px grey;
+    align-items: flex-start;
+    background-color: white;
+}
+
+div.placanje {
+    padding: 1rem;
+    background-color: rgb(239, 239, 239);
+    width: 50%;
+}
+
+.kosarica {
+    text-align: center;
+}
+
+.checkout-container table img {
+    width: 60px;
+    float: left;
+}
+
+.checkout-container h1 {
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkout-container h1:hover {
+    letter-spacing: 0.5rem;
+    background-color: #d8f3ff;
+}
+
+legend,
+.kosarica h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+
+.payform input {
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #00a3ec;
+    font-size: 1.1rem;
+}
+
+.payform input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter, .searchsite) {
+    width: 30vw;
+}
+
+.checkout-container textarea {
+    margin-bottom: 2rem;
+    font-family: 'Poppins', serif;
+    border-radius: 5px;
+    border: 1px solid #00a3ec;
+    width: 30vw;
+    padding: 0.5rem;
+}
+
+.paymentbutton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.paybutton {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #00a3ec;
+    color: white;
+    font-family: cambria;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+.paybutton:hover {
+    background-color: black;
+}
+
+.total2 {
+    font-weight: 800;
+}
+
+.checkout-container table {
+    width: 30vw;
+}
+
+.checkout-container td {
+    padding: 1rem;
+}
+
+.checkout-container span {
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 650px) {
+    .checkout-container .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.placanje {
+        width: 92%;
+    }
+
+    .checkout-container textarea {
+        width: 50vw;
+    }
+
+    .payform input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .payform input {
+        padding: 0.5rem
+    }
+}

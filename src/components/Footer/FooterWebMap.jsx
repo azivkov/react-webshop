@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
-function FooterWebMap({webMapOne, webMapTwo}) {
+function FooterWebMap({title, webMapOne, webMapTwo}) {
     return(
-    <div class="mapa">
-                <h3>Mapa web-a</h3>
+    <div className={"mapa"}>
+                <h3>{title}</h3>
                 <ul>
                     {webMapOne.map((item, index) => (
                         <li key={index}><Link to={item.link}>{item.title}</Link></li>

@@ -23,15 +23,25 @@ function Footer() {
         {link:"/cookies", title:"Pravila o kolačićima"}
     ]
 
+    const contact = [
+        {type: "Mobitel: ", info: "091-234/5678"},
+        {type: "Telefon: ", info: "01/111-1111"},
+        {type: "OIB: ", info: "1234567890"},
+        {type: "Adresa: ", info: "Cyber Shop, Šibenik"},
+        {type:"E-mail: ", info: "cyber@shop.com"}
+    ]
+
     return(
         <section className={"wholefooter"}>
             <div className={"footerrow1"}>
                 <FooterWebMap 
+                title={"Mapa web-a"}
                 webMapOne={WebMapOne}
                 webMapTwo={WebMapTwo}
                 />
-                <FooterContact 
-                contact={["Telefon: 091/234-5678", "OIB: 1234567890", "E-mail: cyber@shop.com", "Adresa: Cyber Shop, Šibenik"]}
+                <FooterContact
+                title={"Kontakt informacije"}
+                contact={contact}
                 />
                 <FooterLocation />
             </div>

@@ -1,0 +1,147 @@
+body {
+    background-image: url(https://i.imgur.com/gmRvVi7.png);
+}
+
+main h1 {
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main h1:hover {
+    letter-spacing: 0.5rem;
+    background-color: #d8f3ff;
+}
+
+.categories-container {
+    padding: 0 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+div.igre {
+    text-align: center;
+    margin-right: 8rem;
+    padding-right: 2rem;
+    align-self: flex-start;
+}
+
+.categories-container li, .kategorije li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: #9393eb;
+    opacity: 80%;
+}
+
+li h3 {
+    margin: 0 0 1rem 0;
+}
+
+div.igre img {
+    width: 150px;
+}
+
+
+div.kategorije img {
+    border-radius: 50%;
+    transition: 1s all linear;
+    width: 300px;
+    box-shadow: 0.5px 0.5px 5px grey;
+}
+
+div.kategorije img:hover {
+    border-radius: 0;
+}
+
+div.kategorije h2 {
+    font-size: 2.5rem;
+}
+
+div.kategorije ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.kategorije li {
+    padding: 1.5rem;
+}
+
+div.igre, div.kategorije {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .categories-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.kategorije ul {
+        display: block;
+    }
+
+    div.igre {
+        order: 2;
+   }
+
+   div.kategorije img {
+        width: 200px;
+    }
+
+    .kategorije ul li {
+        padding: 1.5rem;
+    }
+    
+   main h1:hover {
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    main h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    main h1 {
+        font-size: 1.2rem;
+    }
+
+    div.igre {
+        padding: 0;
+    }
+
+    div.igre ul, div.kategorije ul {
+        padding: 0;
+    }
+
+    div.igre li {
+        padding: 1.5rem;
+    }
+
+    div.igre img, div.kategorije img {
+        width: 100px;
+    }
+}

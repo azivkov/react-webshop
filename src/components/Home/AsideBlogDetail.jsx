@@ -1,7 +1,7 @@
 import {images} from '../../assets/images.js'
 import { Link } from 'react-router-dom'
 
-function HomeBlogDetail({title, image, content, url}) {
+function AsideBlogDetail({title, image, content, url}) {
     return(
         <div>
             <h3 className={"main-font main-text-color"}><img src={images[image]} alt={title}
@@ -14,4 +14,4 @@ function HomeBlogDetail({title, image, content, url}) {
     )
 }
 
-export {HomeBlogDetail}
+export {AsideBlogDetail}

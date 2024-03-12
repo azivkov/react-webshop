@@ -1,10 +1,11 @@
-import { AsideBlogDetail } from "./AsideBlogDetail"
+import { images } from '../../assets/images.js';
+import { AsideBlogDetail } from '../Home/AsideBlogDetail.jsx';
 
-function HomeBlog({title}) {
-    return(
-        <div class="blog">
-            <h2 class="secondary-font main-text-color">{title}</h2>
-
+function AboutSidebar({title}) {
+    return (
+        <div className="moreblog">
+            <h2 className="secondary-font main-text-color">{title}</h2>
+            
             <AsideBlogDetail 
                 title={"Sretni blagdani!"} 
                 image={"blog1"}
@@ -19,7 +20,7 @@ function HomeBlog({title}) {
                 content={"U današnjem sveprisutnom radu od doma, važno je opremiti svoj radni prostor najnovijom tehnologijom kako biste postigli najbolje rezultate. U ovom blogu, istražujemo kako naš cyber shop može unaprijediti vašu radnu svakodnevicu. Od ergonomskih stolica i pametnih monitora do brzih Wi-Fi usmjerivača, pronađite proizvode koji će poboljšati vašu produktivnost i olakšati rad od doma."}
                 />
         </div>
-    )
+    );
 }
 
-export {HomeBlog}
+export { AboutSidebar };

@@ -1,0 +1,172 @@
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+main h1 {
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main h1:hover {
+    letter-spacing: 0.5rem;
+    background-color: #d8f3ff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact img {
+    max-width: 500px;
+}
+
+div.form span {
+    font-size: 0.8rem;
+}
+
+div.contact span {
+    font-weight: 800;
+}
+
+.form input {
+    padding: 0.5rem 7rem 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.contact-container textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.form input, textarea {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.form input:focus, textarea:focus {
+    background-color: #d8f3ff;
+}
+
+.contact-container button {
+    border: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #00a3ec;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+.contact-container button:hover {
+    background-color: black;
+}
+
+div.form, div.contact {
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+div.contact {
+    align-self: flex-start;
+}
+
+.contactsocial {
+    display: flex;
+}
+
+.contactsocial li {
+    list-style-type: none;
+    margin: 1rem 0.8rem 0;
+}
+
+.contactsocial .fa-brands {
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact img {
+        width: 400px;
+    }
+
+    div.form {
+        order: 2;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    div.contact {
+        order: 1;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .contact img {
+        width: 50vw;
+    }
+
+    textarea {
+        width: 50vw;
+    }
+
+    .form input {
+        width: 100px;
+    }
+
+    .contactsocial {
+        padding: 0;
+    }
+
+    .contactsocial li {
+        margin: 0 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .contactsocial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    main h1 {
+        font-size: 1.2rem;
+    }
+
+    .form input {
+        padding: 0.5rem 2rem;
+    }
+
+    textarea {
+        width: 200px;
+    }
+}

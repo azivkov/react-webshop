@@ -38,6 +38,10 @@ body {
     padding: 0;
 }
 
+.kontakt span {
+    font-weight: 600;
+}
+
 div.lokacija {
     align-self: center;
 }
