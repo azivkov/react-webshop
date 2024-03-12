@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+
+body {
+    margin: 0 auto;
+}
+
+.wholeheader {
+    font-family: 'Montserrat', sans-serif;
+    flex: 1 1 auto;
+}
+
+.wholeheader > div {
+    padding: 0;
+    margin: 0;
+}
+
+
+.firstrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.firstrow > div {
+    padding: 0.5em 1em;
+}
+
+.fa-brands, .fa-solid {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    transition: 1s all ease-out;
+    color: rgb(255, 255, 255);
+}
+
+.fa-solid:hover {
+    color:  #b1e5ff;
+}
+
+
+.fa-facebook:hover {
+    color: rgb(151, 199, 255);
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-tiktok:hover {
+    color: palevioletred;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+button.searchsite {
+    border: 0px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-magnifying-glass {
+    padding-left: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.socmed ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socmed li {
+    list-style-type: none;
+}
+
+input.searchsite {
+    padding: 0.3rem 4rem 0.3rem 0.3rem;
+    background-color: #f6f2e8;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input.searchsite:focus {
+    background-color: #d8f3ff;
+}
+
+a.mail, a.tel {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all linear;
+}
+
+a.mail:hover, a.tel:hover {
+    color: #d7f2ff;
+}
+
+.secondrow {
+    display: flex;
+    align-items: center;
+    background-color: #7a7a7a;
+    justify-content: space-around;
+}
+
+div.logo {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+img.logo {
+    max-width: 100%;
+    justify-self: start;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0 3rem;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s all linear;
+}
+
+.nav a:hover {
+    color:  #00a3ec;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav li {
+        padding: 0.5rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .firstrow {
+        justify-content: center;
+    }
+
+    div.mail, div.tel {
+        display: none;
+    }
+
+    input.searchsite {
+        padding: 0.3rem; 
+    }
+
+    .secondrow {
+        display: flex;
+    }
+
+    div.logo, div.nav {
+        display: inline-block;
+    }
+
+    div.logo {
+        padding: 0.5rem 0;
+    }
+
+    .nav li {
+        padding: 0 0 0 1rem;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        padding: 0.3rem 0;
+    }
+
+    .secondrow {
+        justify-content: space-around;
+    }
+
+
+    input.searchsite {
+        margin-left: 4rem;
+    }
+
+    img.logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fa-brands, .fa-solid {
+        font-size: 1rem;
+    }
+
+    .nav a {
+        font-size: 1.5rem;
+    }
+
+    input.searchsite {
+        margin-left: 1rem;
+    }
+
+    img.logo {
+        width: 80px;
+    }
+
+    .secondrow {
+        justify-content: center;
+    }
+
+    li {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0;
+    }
+}

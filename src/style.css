@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Merriweather:wght@700&family=Montserrat&family=Poppins:wght@300&family=Raleway&family=Roboto&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.auto-height-iframe {
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.main-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.secondary-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-bg-color {
+    background-color: #9393eb;
+} 
+
+.secondary-bg-color {
+    background-color: #6363e8;
+}
+
+.main-text-color {
+    color: black;
+}
+
+.secondary-text-color {
+    color: #00a3ec;
+}
+
+.tert-text-color {
+    color: #9393eb;
+}
