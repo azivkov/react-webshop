@@ -2,8 +2,8 @@ import { AsideBlogDetail } from "./AsideBlogDetail"
 
 function HomeBlog({title}) {
     return(
-        <div class="blog">
-            <h2 class="secondary-font main-text-color">{title}</h2>
+        <div className="blog">
+            <h2 className="secondary-font main-text-color">{title}</h2>
 
             <AsideBlogDetail 
                 title={"Sretni blagdani!"} 

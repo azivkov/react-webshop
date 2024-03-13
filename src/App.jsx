@@ -18,7 +18,8 @@ import { Cart } from './components/Cart/Cart'
 import { Checkout } from './components/Checkout/Checkout'
 import { Misc } from './components/Misc/Misc'
 import { ErrorPage } from './components/ErrorPage/ErrorPage'
-import { Page } from './components/Page/Page'
+import { DetailedProductView } from './components/Products/DetailedProductView'
+import { DetailedBlogView } from './components/Blog/DetailedBlogView'
 
 
 function App() {
@@ -31,12 +32,12 @@ function App() {
           <Route path="/categories" element={<Categories title={"Kategorije proizvoda"}/>} />
           <Route path="/products" element={<Products />}>
             <Route index element={<ProductList />} />
-            <Route path="/products/:id" element={<SingleProduct />} />
+            <Route path="/products/:id" element={<DetailedProductView />} />
           </Route>
           <Route path="/about" element={<About title={"O nama"}/>} />
           <Route path="/blog" element={<Blog />}>
             <Route index element={<BlogList />} />
-            <Route path="/blog/:id" element={<SingleBlog />} />
+            <Route path="/blog/:id" element={<DetailedBlogView />} />
           </Route>
           <Route path="/contact" element={<Contact title={"Kontaktirajte nas"}/>} />
           <Route path="/cart" element={<Cart />} />
@@ -46,7 +47,6 @@ function App() {
           <Route path="/terms" element={<Misc />} />
           <Route path="/faq" element={<Misc />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/page" element={<Page title={"Some title"} description={"Lorem ipsum"}/>} />
         </Route>
       </Routes>
     </BrowserRouter>

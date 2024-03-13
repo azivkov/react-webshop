@@ -46,7 +46,7 @@ div.placanje {
     background-color: #d8f3ff;
 }
 
-legend,
+.checkout-container legend,
 .kosarica h2 {
     font-size: 2rem;
     padding-bottom: 1rem;

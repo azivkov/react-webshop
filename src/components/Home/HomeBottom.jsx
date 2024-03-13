@@ -3,7 +3,7 @@ import { HomeNewsletter } from "./HomeNewsletter"
 
 function HomeBottom() {
     return(
-        <div class="container2">
+        <div className="container2">
             <HomeBlog title={"Najnovije s bloga"}/>
             <HomeNewsletter />
         </div>

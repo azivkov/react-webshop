@@ -15,9 +15,9 @@ function HomeNewsletter() {
         </p>
         <br />
         <form>
-            <label for={"email"}><input type={"email"} placeholder={"Upišite e-mail adresu"} id={"email"} name={"email"}
+            <label htmlFor={"email"}><input type={"email"} placeholder={"Upišite e-mail adresu"} id={"email"} name={"email"}
                     required /><button type={"submit"}>Prijavi se!</button></label><br /><br />
-            <label for={"privola"}><input type={"checkbox"} id={"privola"} name={"privola"} value="yes" required /><span
+            <label htmlFor={"privola"}><input type={"checkbox"} id={"privola"} name={"privola"} value="yes" required /><span
                     className={"privola"}>Prihvaćam prikupljanje i obradu osobnih podataka danih u
                     obrascu bez kojih moj zahtjev ne može biti ispunjen, te da me CyberShop kontaktira u
                     svrhu slanja obavijesti.</span></label>
