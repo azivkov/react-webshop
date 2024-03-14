@@ -1,8 +1,8 @@
 const images = {
     logo: "https://i.imgur.com/Vn0IPLb.png",
     banner: "https://i.imgur.com/wFIvm28.jpg",
-    blog1: "https://i.imgur.com/nhVqNBJ.jpg",
-    blog2: "https://i.imgur.com/VsuVxlx.jpg",
+    blogprev1: "https://i.imgur.com/nhVqNBJ.jpg",
+    blogprev2: "https://i.imgur.com/VsuVxlx.jpg",
     newsletter1: "https://i.imgur.com/seMSSgU.png",
     newsletter2: "https://i.imgur.com/OB50hGy.png",
     product1: "https://i.imgur.com/0ehfIwO.jpg",
@@ -39,6 +39,11 @@ const images = {
     gamingCategory3: "https://i.imgur.com/V3w9vCM.jpg",
     gamingCategory4: "https://i.imgur.com/f6rCi0P.png",
     gamingCategory5: "https://i.imgur.com/bVYKgmW.jpg",
+    blog1: "https://i.imgur.com/wWmEHTJ.png",
+    blog2: "https://i.imgur.com/uHwKJzN.jpg",
+    blog3: "https://i.imgur.com/pymwUyD.jpg",
+    blog4: "https://i.imgur.com/45wkovb.jpg",
+    blog5: "https://i.imgur.com/n7CqvQD.png",
     about1: "https://i.imgur.com/SJlr0ur.jpg",
     about2: "https://i.imgur.com/eNJGwKE.jpg",
     contact: "https://i.imgur.com/nur7OOV.jpg"

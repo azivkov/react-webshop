@@ -28,7 +28,7 @@ export const productData = [{
     },
     {
         id: 5,
-        title: "Baldur's Gate 3 za PS5",
+        title: "Baldurs Gate 3 za PS5",
         price: 59.99,
         image: "https://i.imgur.com/yKpyPz0.png",
         description: "Baldur's Gate 3, epicentar avanture u svijetu Dungeons & Dragons, pruža nevjerojatno duboko iskustvo uloge u kojem se igrači upuštaju u epsko putovanje prepuno tajni, izazova i fantastičnih bića. Razvijen od strane Larian Studios, igra oživljava bogatstvo D&D svemira uz spektakularnu grafiku, duboke narativne krivulje i inovativan sustav odlučivanja koji oblikuje priču prema igračevim akcijama. S uvjerljivim likovima, bogatim okolinama i taktičkim borbenim sustavom, Baldur's Gate 3 je nezaobilazno iskustvo za ljubitelje RPG igara, pružajući im priliku da istraže opasnosti i misterije ove izvanredne fantazijske avanture."

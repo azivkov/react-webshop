@@ -7,10 +7,10 @@ function HomePopular({title, popularProducts}) {
             <h2 className={"secondary-font main-text-color"}>{title}</h2>
             <ul className={"popproizv"}>
                 {popularProducts.map((item, index) => (
-                    <li key={index}><Link to={item.url}><img src={images[item.img]} alt={item.title} title={item.title}/>
+                    <li key={index}><Link to={"/products/"+item.id}><img src={item.image} alt={item.title} title={item.title}/>
                         <h3 className={"secondary-font"}>{item.title}</h3>
                     </Link>
-                    <p className={"main-font"}>{item.price}</p>
+                    <p className={"main-font"}>{item.price} €</p>
                     <p>
                     <button>Dodaj u košaricu</button>
                     </p>

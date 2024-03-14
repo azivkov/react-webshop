@@ -1,0 +1,189 @@
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-container .blog {
+    width: 75%;
+    text-align: justify;
+}
+
+.main-blog h1 {
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-blog h1:hover {
+    letter-spacing: 0.5rem;
+    background-color: #d8f3ff;
+}
+
+.blog-container h2 {
+    font-size: 2.2rem;
+}
+
+.blog-container h3 {
+    font-size: 1.5rem;
+}
+
+.main-blog {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.blog-container img {
+    max-width: 100%;
+}
+
+.blog-container article a {
+    text-decoration: none;
+    color: #00a3ec;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-container article a:hover {
+    color: black;
+}
+
+.blog-container article {
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    margin-bottom: 1rem;
+    transition: 1s all linear;
+    background-color: white;
+}
+
+.blog-container .newsletter {
+    width: 35%;
+    margin-left: 3rem;
+    font-size: 1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    align-self: flex-start;
+    padding: 0.5rem 1.5rem;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+
+.blog-container article:hover {
+    background-color: #e9f8ff;
+}
+
+.blog-container div.newsletter input {
+    border: 2px solid #00a3ec;
+    border-radius: 5px;
+    padding: 0.3rem 2rem 0.3rem 0.3rem;
+    margin-right: 0.5rem;
+    font-family: cambria;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.blog-container div.newsletter input:focus {
+    background-color: #e9f8ff;
+}
+
+.blog-container div.newsletter form {
+    padding-bottom: 2rem;
+}
+
+.blog-container div.newsletter p {
+    line-height: 1.4rem;
+}
+
+.blog-container div.newsletter button {
+    border: 0;
+    border-radius: 10px;
+    padding: 0.3rem;
+    background-color: #00a3ec;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.blog-container div.newsletter button:hover {
+    background-color: black;
+}
+
+.blog-container span.privola {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nextpage {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.nextpage div {
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0.5px 0.5px 5px grey;
+    color: #00a3ec;
+}
+
+.nextpage div:hover {
+    background-color: #00a3ec;
+    color: white;
+}
+
+.nextpage div:nth-child(2) {
+    background-color: #00a3ec;
+    color: black;
+}
+
+.nextpage .fa-solid {
+    font-size: 0.6rem;
+    color: black;
+}
+
+div[data-status="disabled"] {
+    background-color: rgb(213, 213, 213);
+    color: grey;
+    cursor: not-allowed;
+}
+
+div[data-status="disabled"]:hover {
+    color: grey;
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-container .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-container .newsletter {
+        order: 2;
+        width: 70%;
+    }
+
+    .blog-container .blog {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog-container .newsletter input {
+        padding-right: 0;
+        font-size: 0.8rem;
+    }
+
+    .blog-container .newsletter {
+        margin: 0;
+    }
+}
