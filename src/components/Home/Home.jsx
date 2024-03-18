@@ -4,7 +4,7 @@ import { HomeCategories } from './HomeCategories';
 import { HomePopular } from './HomePopular';
 import { HomeBottom } from './HomeBottom';
 
-function Home() {
+function Home({handleAddToCart}) {
     const CategoriesOne = ["Mobiteli", "Stolna računala", "Laptopi", "Televizori", "Printeri"];
     const CategoriesTwo = ["Konzole", "Igre", "Tipkovnice", "Pohrana podataka", "Mrežna oprema"];
     const PopularProducts = [
@@ -60,6 +60,7 @@ function Home() {
         <HomePopular 
             title={"Popularni proizvodi"}
             popularProducts={PopularProducts}
+            handleAddToCart={handleAddToCart}
         />
 
         <HomeBottom />

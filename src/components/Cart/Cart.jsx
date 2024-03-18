@@ -3,12 +3,7 @@ import {images} from '../../assets/images.js'
 import { CartItems } from './CartItems.jsx'
 import { Link } from 'react-router-dom'
 
-function Cart() {
-    const cartItems = [
-        {image: "product4", title:"Sony Playstation 5", price:"559.99", count: "1"},
-        {image: "product5", title:"PS5 igra Baldurs Gate 3", price:"69.99", count: "1"},
-    ]
-
+function Cart({cart, removeFromCart}) {
     return(
         <main className="cart-container">
         <h1 className="secondary-font">Vaša košarica</h1>
@@ -24,15 +19,7 @@ function Cart() {
                     </tr>
                 </thead>
                 <tbody>
-                    <CartItems cartItems={cartItems}/>
-
-                    <tr>
-                        <td></td>
-                        <td><b>UKUPNO:</b> </td>
-                        <td><b>629.98 €</b></td>
-                        <td>2</td>
-                        <td></td>
-                    </tr>
+                    <CartItems cart={cart} removeFromCart={removeFromCart}/>
                 </tbody>
 
             </table>

@@ -1,6 +1,6 @@
 import { images } from '../../assets/images';
 
-function CheckoutCart({cartItems}) {
+function CheckoutCart({cart}) {
     return(
         <div className="kosarica">
         <h2 className="secondary-font main-text-color">Pregled košarice</h2>
@@ -14,9 +14,9 @@ function CheckoutCart({cartItems}) {
             </thead>
             <tbody>
 
-                {cartItems.map(item => (
+                {cart.map(item => (
                     <tr>
-                        <td><img src={images[item.image]} width="50" /></td> 
+                        <td><img src={item.image} width="50" /></td> 
                         <td>{item.title}</td> 
                         <td>{item.price} €</td>
                     </tr>

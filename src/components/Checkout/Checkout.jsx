@@ -3,7 +3,7 @@ import { images } from '../../assets/images';
 import { CheckoutAddress } from './CheckoutAddress';
 import { CheckoutCart } from './CheckoutCart';
 
-function Checkout({title}) {
+function Checkout({title, cart}) {
     const checkoutForm = [
         {title: "Ime i prezime:", type: "text", id: "ime"},
         {title: "Kućna adresa:", type: "text", id: "adresa"},
@@ -20,17 +20,12 @@ function Checkout({title}) {
         {id:"pouzece", title:"Plaćanje pouzećem"}
     ]
 
-    const cartItems = [
-        {image: "product4", title:"Sony Playstation 5", price:"559.99", count: "1"},
-        {image: "product5", title:"PS5 igra Baldurs Gate 3", price:"69.99", count: "1"},
-    ]
-
     return (
         <main className="checkout-container">
             <h1 className="secondary-font main-text-color">{title}</h1>
             <div className="container">
                 <CheckoutAddress title={"Adresa dostave"} checkoutForm={checkoutForm} payment={payment}/>
-                <CheckoutCart cartItems={cartItems}/>
+                <CheckoutCart cart={cart}/>
             </div>
         </main>
     );

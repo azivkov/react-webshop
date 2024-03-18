@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faForward, faBackward } from '@fortawesome/free-solid-svg-icons';
 
 
-function ProductsPage() {
+function ProductsPage({handleAddToCart}) {
     const priceFilter = [
         {value: "do49", title: "Do 49€"},
         {value: "50do199", title: "50€ - 199€"},
@@ -36,7 +36,7 @@ function ProductsPage() {
             <div className="productlist-container">
                 <ProductFilters priceFilter={priceFilter} categoryFilter={categoryFilter} />
 
-                <ProductList productData={productData}/>
+                <ProductList productData={productData} handleAddToCart={handleAddToCart}/>
             </div>
         </main>
 

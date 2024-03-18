@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { productData } from './productData'
 
-function DetailedProductView() {
+function DetailedProductView({handleAddToCart}) {
 
     const urlParams = useParams();
     console.log("params:", urlParams.id);
@@ -39,7 +39,7 @@ function DetailedProductView() {
                         Cijena: {item.price} €
                     </p>
 
-                    <button>Dodaj u košaricu</button>
+                    <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
                 </div>
             </div>
         </div>

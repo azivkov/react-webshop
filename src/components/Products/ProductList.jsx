@@ -3,7 +3,7 @@ import { images } from "../../assets/images"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faForward, faBackward } from '@fortawesome/free-solid-svg-icons';
 
-function ProductList({productData}) {
+function ProductList({productData, handleAddToCart}) {
     return(
         <div className="products">
             <ul>
@@ -15,7 +15,7 @@ function ProductList({productData}) {
                         </Link>
                         <p className="main-font">{item.price} €</p>
                         <p>
-                            <button>Dodaj u košaricu</button>
+                        <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
                         </p>
                     </li>
                 ))}
