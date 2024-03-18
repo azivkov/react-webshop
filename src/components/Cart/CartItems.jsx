@@ -3,6 +3,14 @@ import React from 'react';
 function CartItems({ cart, removeFromCart }) {
     // Calculate total items and total price
     const { totalItems, totalPrice } = calculateTotals(cart);
+    function calculateTotals(cart) {
+        let totalItems = cart.length;
+        let totalPrice = cart.reduce((acc, item) => {
+            return acc + parseFloat(item.price);
+        }, 0);
+    
+        return { totalItems, totalPrice };
+    }
 
     return (
         <>
@@ -24,15 +32,6 @@ function CartItems({ cart, removeFromCart }) {
             </tr>
         </>
     );
-}
-
-function calculateTotals(cart) {
-    let totalItems = cart.length;
-    let totalPrice = cart.reduce((acc, item) => {
-        return acc + parseFloat(item.price);
-    }, 0);
-
-    return { totalItems, totalPrice };
 }
 
 export { CartItems };
