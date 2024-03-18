@@ -15,7 +15,7 @@ function ProductList({productData, handleAddToCart}) {
                         </Link>
                         <p className="main-font">{item.price} €</p>
                         <p>
-                        <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
+                        <form><button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button></form>
                         </p>
                     </li>
                 ))}

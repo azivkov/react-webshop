@@ -39,7 +39,7 @@ function DetailedProductView({handleAddToCart}) {
                         Cijena: {item.price} €
                     </p>
 
-                    <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
+                    <form><button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button></form>
                 </div>
             </div>
         </div>

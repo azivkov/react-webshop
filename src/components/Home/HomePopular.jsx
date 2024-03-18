@@ -11,9 +11,7 @@ function HomePopular({title, popularProducts, handleAddToCart}) {
                         <h3 className={"secondary-font"}>{item.title}</h3>
                     </Link>
                     <p className={"main-font"}>{item.price} €</p>
-                    <p>
-                    <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
-                    </p>
+                    <form><button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button></form>
                     </li>
                 ))}
             </ul>

@@ -46,7 +46,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout cart={cart}/>}>
           <Route index element={<Home handleAddToCart={handleAddToCart} />} />
           <Route path="/categories" element={<Categories title={"Kategorije proizvoda"}/>} />
           <Route path="/products" element={<Products />}>
