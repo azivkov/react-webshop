@@ -3,22 +3,7 @@ import { images } from "../../assets/images"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faForward, faBackward } from '@fortawesome/free-solid-svg-icons';
 
-function ProductList({productData, handleAddToCart}) {
-    const [searchParams, setSearchParams] = useSearchParams();
-    const objectParams = Object.fromEntries([...searchParams]);
-    console.log("objectParams", objectParams);
-
-    const matchedProducts = productData.filter(product => {
-    console.log("product cijena", product.cijena);
-    console.log("objectParams cijena", objectParams.cijena);
-    return (
-        (product.cijena === objectParams.cijena || !objectParams.cijena) && // Check if the price matches or if no price filter applied
-        (product.kategorija === objectParams.kategorija || !objectParams.kategorija) // Check if the category matches or if no category filter applied
-    );
-    })
-
-    console.log("matched products", matchedProducts);
-
+function ProductList({productData, handleAddToCart, matchedProducts, objectParams}) {
     return(
         <div className="products">
             {Object.keys(objectParams).length !== 0 ? (

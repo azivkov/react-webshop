@@ -17,11 +17,11 @@ function ProductFilters(props) {
                 </fieldset>
                 <br />
                 <fieldset>
-                    <legend>Odaberite kategorije proizvoda:</legend>
+                    <legend>Odaberite kategoriju proizvoda:</legend>
 
                     {props.categoryFilter.map((item, index) =>(
                         <React.Fragment key={index}>
-                        <input type="checkbox" id={item.value} name="kategorija" value={item.value} key={index} /><label htmlFor={item.value}>{item.title}</label><br />
+                        <input type="radio" id={item.value} name="kategorija" value={item.value} key={index} /><label htmlFor={item.value}>{item.title}</label><br />
                         </React.Fragment>
                     ))}
                 </fieldset>

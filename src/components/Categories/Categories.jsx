@@ -12,15 +12,15 @@ function Categories({title}) {
     ]
 
     const allCategories = [
-        {title: "Mobiteli", image:"category1"},
-        {title: "Stolna računala", image:"category2"},
-        {title: "Laptopi", image:"category3"},
-        {title: "Televizori", image:"category4"},
-        {title: "Konzole", image:"category5"},
-        {title: "Printeri", image:"category6"},
-        {title: "Tipkovnice", image:"category7"},
-        {title: "Pohrana podataka", image:"category8"},
-        {title: "Mrežna oprema", image:"category9"},
+        {title: "Mobiteli", image:"category1", kategorija: "mobiteli"},
+        {title: "Stolna računala", image:"category2", kategorija: "stolnaracunala"},
+        {title: "Laptopi", image:"category3", kategorija: "laptopi"},
+        {title: "Televizori", image:"category4", kategorija: "televizori"},
+        {title: "Konzole", image:"category5", kategorija: "konzole"},
+        {title: "Printeri", image:"category6", kategorija: "printeri"},
+        {title: "Tipkovnice", image:"category7", kategorija: "tipkovnice"},
+        {title: "Pohrana podataka", image:"category8", kategorija: "pohrana"},
+        {title: "Mrežna oprema", image:"category9", kategorija: "mreznaoprema"},
     ]
 
     return(

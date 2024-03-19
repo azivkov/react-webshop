@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductsPage.css';
 import { images } from '../../assets/images';
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ProductFilters } from './ProductFilters';
 import { ProductList } from './ProductList';
 import { productData } from './productData';
@@ -30,16 +30,18 @@ function ProductsPage({handleAddToCart}) {
         {value: "mreznaoprema", title: "Mrežna oprema"},
     ]
 
-    // const [searchParams, setSearchParams] = useSearchParams();
-    // const objectParams = Object.fromEntries([...searchParams]);
-    // // console.log("objectParams", objectParams);
-    // const matchedProducts = productData.filter(product => {
-    //     console.log("product cijena", product.cijena);
-    //     console.log("objectParams cijena", objectParams.cijena);
-    //     return (
-    //         product.cijena === objectParams.cijena
-    //     );
-    // })
+    const [searchParams, setSearchParams] = useSearchParams();
+    const objectParams = Object.fromEntries([...searchParams]);
+    // console.log("objectParams", objectParams);
+
+    const matchedProducts = productData.filter(product => {
+    // console.log("product cijena", product.cijena);
+    // console.log("objectParams cijena", objectParams.cijena);
+    return (
+        (product.cijena === objectParams.cijena || !objectParams.cijena) && 
+        (product.kategorija === objectParams.kategorija || !objectParams.kategorija)
+    );
+    })
 
     return (
         <main>
@@ -47,7 +49,10 @@ function ProductsPage({handleAddToCart}) {
             <div className="productlist-container">
                 <ProductFilters priceFilter={priceFilter} categoryFilter={categoryFilter} />
 
-                <ProductList productData={productData} handleAddToCart={handleAddToCart}/>
+                <ProductList productData={productData} 
+                handleAddToCart={handleAddToCart} 
+                objectParams={objectParams}
+                matchedProducts={matchedProducts}/>
             </div>
         </main>
 
