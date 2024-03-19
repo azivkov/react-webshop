@@ -36,9 +36,9 @@ function App() {
         setCart(updatedCart);
     };
 
-    const removeFromCart = (index) => {
+    const removeFromCart = (item) => {
       const updatedCart = [...cart];
-      updatedCart.splice(index, 1);
+      updatedCart.splice(item, 1);
       setCart(updatedCart);
   };
 
