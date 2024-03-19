@@ -30,6 +30,17 @@ function ProductsPage({handleAddToCart}) {
         {value: "mreznaoprema", title: "Mrežna oprema"},
     ]
 
+    // const [searchParams, setSearchParams] = useSearchParams();
+    // const objectParams = Object.fromEntries([...searchParams]);
+    // // console.log("objectParams", objectParams);
+    // const matchedProducts = productData.filter(product => {
+    //     console.log("product cijena", product.cijena);
+    //     console.log("objectParams cijena", objectParams.cijena);
+    //     return (
+    //         product.cijena === objectParams.cijena
+    //     );
+    // })
+
     return (
         <main>
             <h1 className="main-text-color">Proizvodi</h1>

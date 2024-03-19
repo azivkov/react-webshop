@@ -4,7 +4,6 @@ import { faFacebook, faInstagram, faTwitter, faTiktok, faYoutube } from '@fortaw
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function HeaderFirstRow(props) {
-    console.log(props.cart)
     return(
         <div className={"firstrow"}>
         <div className={"mail"}><Link to="mailto: cyber@shop.com" className={"mail"}>{props.contactInfo[0]}</Link></div>

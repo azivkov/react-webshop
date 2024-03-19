@@ -47,6 +47,7 @@ function Home({handleAddToCart}) {
 
     return(
     <>
+    <div className="main-home">
         <HomeBanner 
             title={["Uđite u svijet budućnosti sa Cyber Shopom -", "Vašim pouzdanim partnerom u svim tehnološkim potrebama!"]}
         />
@@ -64,9 +65,7 @@ function Home({handleAddToCart}) {
         />
 
         <HomeBottom />
-        
-
-        
+    </div>
     </>
     )
 }
