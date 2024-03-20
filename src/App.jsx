@@ -37,6 +37,7 @@ function App() {
     const handleAddToCart = (item) => {
         const updatedCart = [...cart, item];
         setCart(updatedCart);
+        window.location.reload();
     };
 
     const removeFromCart = (item) => {
