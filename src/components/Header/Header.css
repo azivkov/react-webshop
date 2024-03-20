@@ -231,7 +231,7 @@ img.logo {
         justify-content: center;
     }
 
-    li {
+    .nav li {
         font-size: 1.5rem;
         line-height: 2rem;
         padding: 0;
