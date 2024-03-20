@@ -162,7 +162,7 @@ div[data-status="disabled"]:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .blog-container .container {
+    .blog-container {
         display: flex;
         flex-direction: column;
     }
