@@ -15,7 +15,7 @@ function ProductList({productData, handleAddToCart, matchedProducts, objectParam
                                 <h3 className="secondary-font">{item.title}</h3>
                             </Link>
                             <p className="main-font">{item.price} €</p>
-                            <form><button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button></form>
+                            <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
                         </li>
                     ))}
                 </ul>
@@ -28,7 +28,7 @@ function ProductList({productData, handleAddToCart, matchedProducts, objectParam
                                 <h3 className="secondary-font">{item.title}</h3>
                             </Link>
                             <p className="main-font">{item.price} €</p>
-                            <form><button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button></form>
+                            <button onClick={() => handleAddToCart(item)}>Dodaj u košaricu</button>
                         </li>
                     ))}
                 </ul>
