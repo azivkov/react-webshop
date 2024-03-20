@@ -1,6 +1,11 @@
+import '../Misc/Misc.css'
+
 function ErrorPage() {
     return(
-        <h1>404 - Page not found</h1>
+        <main className="misc">
+            <h1>404 - Page not found</h1>
+        </main>
+
     )
 }
 

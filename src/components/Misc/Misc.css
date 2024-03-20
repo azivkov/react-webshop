@@ -1,0 +1,35 @@
+.misc h1 {
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.misc h1:hover {
+    letter-spacing: 0.5rem;
+    background-color: #d8f3ff;
+}
+
+
+main.misc {
+    width: 60vw;
+    margin: 1rem auto;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    text-align: justify;
+}
+
+.misc span {
+    font-weight: 800;
+    color: #00a3ec;
+}
+

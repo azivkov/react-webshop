@@ -16,7 +16,10 @@ import { DetailedBlogView } from './components/Blog/DetailedBlogView'
 import { Contact } from './components/Contact/Contact'
 import { Cart } from './components/Cart/Cart'
 import { Checkout } from './components/Checkout/Checkout'
-import { Misc } from './components/Misc/Misc'
+import { Cookies } from './components/Misc/Cookies'
+import { Terms } from './components/Misc/Terms'
+import { Privacy } from './components/Misc/Privacy'
+import { FAQPage } from './components/Misc/FAQPage'
 import { ErrorPage } from './components/ErrorPage/ErrorPage'
 
 function App() {
@@ -61,10 +64,10 @@ function App() {
           <Route path="/contact" element={<Contact title={"Kontaktirajte nas"}/>} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart}/>} />
           <Route path="/checkout" element={<Checkout title={"Plaćanje"} cart={cart}/>} />
-          <Route path="/cookies" element={<Misc />} />
-          <Route path="/privacy" element={<Misc />} />
-          <Route path="/terms" element={<Misc />} />
-          <Route path="/faq" element={<Misc />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/faq" element={<FAQPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
