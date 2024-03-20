@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
+import './style.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Home } from './components/Home/Home'
@@ -21,6 +21,7 @@ import { Terms } from './components/Misc/Terms'
 import { Privacy } from './components/Misc/Privacy'
 import { FAQPage } from './components/Misc/FAQPage'
 import { ErrorPage } from './components/ErrorPage/ErrorPage'
+import toast from 'react-hot-toast'
 
 function App() {
   // Initialize cart state with items from localStorage or an empty array
@@ -37,8 +38,8 @@ function App() {
     const handleAddToCart = (item) => {
         const updatedCart = [...cart, item];
         setCart(updatedCart);
-        window.location.reload();
-    };
+        toast.success('Dodano u košaricu!')
+      };
 
     const removeFromCart = (item) => {
       const updatedCart = [...cart];
