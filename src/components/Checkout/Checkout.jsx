@@ -3,7 +3,7 @@ import { images } from '../../assets/images';
 import { CheckoutAddress } from './CheckoutAddress';
 import { CheckoutCart } from './CheckoutCart';
 
-function Checkout({title, cart}) {
+function Checkout({title}) {
     const checkoutForm = [
         {title: "Ime i prezime:", type: "text", id: "ime"},
         {title: "Kućna adresa:", type: "text", id: "adresa"},
@@ -25,7 +25,7 @@ function Checkout({title, cart}) {
             <h1 className="secondary-font main-text-color">{title}</h1>
             <div className="container">
                 <CheckoutAddress title={"Adresa dostave"} checkoutForm={checkoutForm} payment={payment}/>
-                <CheckoutCart cart={cart}/>
+                <CheckoutCart />
             </div>
         </main>
     );

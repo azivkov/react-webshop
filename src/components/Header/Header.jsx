@@ -5,7 +5,7 @@ import { HeaderSecondRow } from './HeaderSecondRow';
 import { faFacebook, faInstagram, faTwitter, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 
-function Header({cart}) {
+function Header() {
 
     const contactInfo = ["cyber@shop.com", "091/234-5678"];
     const socialMedia = [
@@ -27,7 +27,7 @@ function Header({cart}) {
 
     return(
         <section className={"wholeheader"}>
-            <HeaderFirstRow contactInfo={contactInfo} socialMedia={socialMedia} cart={cart}/>
+            <HeaderFirstRow contactInfo={contactInfo} socialMedia={socialMedia} />
             <HeaderSecondRow navigation={navigation} />
         </section>
     )

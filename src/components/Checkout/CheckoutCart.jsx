@@ -1,6 +1,10 @@
 import { images } from '../../assets/images';
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
-function CheckoutCart({cart}) {
+function CheckoutCart() {
+    const { cart } = useContext(AppContext);
+    
     const { totalItems, totalPrice } = calculateTotals(cart);
     function calculateTotals(cart) {
         let totalItems = cart.length;

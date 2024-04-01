@@ -5,7 +5,7 @@ import { HomePopular } from './HomePopular';
 import { HomeBottom } from './HomeBottom';
 import { productData } from '../Products/productData';
 
-function Home({handleAddToCart}) {
+function Home() {
     const CategoriesOne = [
         {title: "Mobiteli", link: "mobiteli"},
         {title: "Stolna računala", link:"stolnaracunala"},
@@ -38,7 +38,6 @@ function Home({handleAddToCart}) {
         <HomePopular 
             title={"Popularni proizvodi"}
             popularProducts={PopularProducts}
-            handleAddToCart={handleAddToCart}
         />
 
         <HomeBottom />

@@ -3,7 +3,7 @@ import {images} from '../../assets/images.js'
 import { CartItems } from './CartItems.jsx'
 import { Link } from 'react-router-dom'
 
-function Cart({cart, removeFromCart}) {
+function Cart() {
     return(
         <main className="cart-container">
         <h1 className="secondary-font">Vaša košarica</h1>
@@ -19,7 +19,7 @@ function Cart({cart, removeFromCart}) {
                     </tr>
                 </thead>
                 <tbody>
-                    <CartItems cart={cart} removeFromCart={removeFromCart}/>
+                    <CartItems />
                 </tbody>
 
             </table>

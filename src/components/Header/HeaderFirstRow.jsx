@@ -2,8 +2,12 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
 
 function HeaderFirstRow(props) {
+    const { cart } = useContext(AppContext);
+
     return(
         <div className={"firstrow"}>
         <div className={"mail"}><Link to="mailto: cyber@shop.com" className={"mail"}>{props.contactInfo[0]}</Link></div>
@@ -23,7 +27,7 @@ function HeaderFirstRow(props) {
         </div>
         <div className={"cart"}>
             <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} className={"fa-solid fa-cart-shopping cart position-relative"} alt="košarica" title="Košarica" />
-            <span style={{color: "white"}}>{props.cart.length}</span></Link>
+            <span style={{color: "white"}}>{cart.length}</span></Link>
         </div>
     </div>
     )

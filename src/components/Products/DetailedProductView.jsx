@@ -5,8 +5,11 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { productData } from './productData'
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
-function DetailedProductView({handleAddToCart}) {
+function DetailedProductView() {
+    const { handleAddToCart } = useContext(AppContext);
 
     const urlParams = useParams();
     console.log("params:", urlParams.id);

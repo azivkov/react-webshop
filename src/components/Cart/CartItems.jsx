@@ -1,7 +1,10 @@
 import React from 'react';
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
-function CartItems({ cart, removeFromCart }) {
+function CartItems() {
     // Calculate total items and total price
+    const { cart, removeFromCart } = useContext(AppContext);
     const { totalItems, totalPrice } = calculateTotals(cart);
     function calculateTotals(cart) {
         let totalItems = cart.length;

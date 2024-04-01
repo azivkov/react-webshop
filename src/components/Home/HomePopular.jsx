@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 import {images} from '../../assets/images.js'
+import { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
 
-function HomePopular({title, popularProducts, handleAddToCart}) {
+function HomePopular({title, popularProducts}) {
+    const { handleAddToCart } = useContext(AppContext);
+
     return(
         <div className={"popularno"}>
             <h2 className={"secondary-font main-text-color"}>{title}</h2>

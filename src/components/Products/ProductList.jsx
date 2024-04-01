@@ -2,8 +2,11 @@ import { Link, useSearchParams } from "react-router-dom"
 import { images } from "../../assets/images"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faForward, faBackward } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
-function ProductList({productData, handleAddToCart, matchedProducts, objectParams}) {
+function ProductList({productData, matchedProducts, objectParams}) {
+    const { handleAddToCart } = useContext(AppContext);
     const listOfProducts = Object.keys(objectParams).length !== 0 ? matchedProducts : productData;
 
     return(

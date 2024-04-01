@@ -21,6 +21,7 @@ import { Terms } from './components/Misc/Terms'
 import { Privacy } from './components/Misc/Privacy'
 import { FAQPage } from './components/Misc/FAQPage'
 import { ErrorPage } from './components/ErrorPage/ErrorPage'
+import { AppContext } from './context/AppContext'
 import toast from 'react-hot-toast'
 
 function App() {
@@ -47,16 +48,19 @@ function App() {
       setCart(updatedCart);
   };
 
+  console.log(cart);
+
   return (
     <>
+    <AppContext.Provider value={{cart, setCart, handleAddToCart, removeFromCart}} >
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout cart={cart}/>}>
-          <Route index element={<Home handleAddToCart={handleAddToCart} />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="/categories" element={<Categories title={"Kategorije proizvoda"}/>} />
           <Route path="/products" element={<Products />}>
-            <Route index element={<ProductsPage handleAddToCart={handleAddToCart} />} />
-            <Route path="/products/:id" element={<DetailedProductView handleAddToCart={handleAddToCart} />} />
+            <Route index element={<ProductsPage />} />
+            <Route path="/products/:id" element={<DetailedProductView />} />
           </Route>
           <Route path="/about" element={<About title={"O nama"}/>} />
           <Route path="/blog" element={<Blog />}>
@@ -64,8 +68,8 @@ function App() {
             <Route path="/blog/:id" element={<DetailedBlogView />} />
           </Route>
           <Route path="/contact" element={<Contact title={"Kontaktirajte nas"}/>} />
-          <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart}/>} />
-          <Route path="/checkout" element={<Checkout title={"Plaćanje"} cart={cart}/>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout title={"Plaćanje"} />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
@@ -74,6 +78,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </AppContext.Provider>
     </>
   )
 }
