@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import {images} from '../../assets/images.js'
 
-function HeaderSecondRow(props) {
+function HeaderSecondRow({navigation}) {
     return(
         <div className={"secondrow"}> 
             <div className={"logo"}>
@@ -10,7 +10,7 @@ function HeaderSecondRow(props) {
     
             <div className={"nav"}>
                 <ul>
-                    {props.navigation.map((item, index) =>
+                    {navigation.map((item, index) =>
                     <li key={index}><Link to={item.link}>{item.title}</Link></li>
                     )}
                 </ul>

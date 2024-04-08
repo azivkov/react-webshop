@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './style.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
+import { Login } from './components/Login/Login'
 import { Home } from './components/Home/Home'
 import { Categories } from './components/Categories/Categories'
 import { Products } from './components/Products/Products'
@@ -28,7 +29,7 @@ function App() {
   // Initialize cart state with items from localStorage or an empty array
     const [cart, setCart] = useState(() => {
       const storedCart = localStorage.getItem('cart');
-      return storedCart ? JSON.parse(storedCart) : [];
+      return storedCart ? JSON.parse(storedCart) : {};
     });
 
     // Update localStorage whenever cart state changes
@@ -48,15 +49,25 @@ function App() {
       setCart(updatedCart);
   };
 
+  const [user, setUser] = useState(() => {
+    const storedUser = localStorage.getItem('user');
+    return storedUser ? JSON.parse(storedUser) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('user', JSON.stringify(user));
+  }, [user]);
+
   console.log(cart);
 
   return (
     <>
-    <AppContext.Provider value={{cart, setCart, handleAddToCart, removeFromCart}} >
+    <AppContext.Provider value={{cart, setCart, handleAddToCart, removeFromCart, user, setUser}} >
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/categories" element={<Categories title={"Kategorije proizvoda"}/>} />
           <Route path="/products" element={<Products />}>
             <Route index element={<ProductsPage />} />

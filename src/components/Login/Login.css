@@ -1,4 +1,4 @@
-.misc h1 {
+.misc-login h1 {
     width: max-content;
     margin: 1rem auto;
     font-size: 3.5rem;
@@ -11,14 +11,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.misc h1:hover {
+.misc-login h1:hover {
     letter-spacing: 0.5rem;
     background-color: #d8f3ff;
 }
 
-
-main.misc {
-    width: 60vw;
+main.misc-login {
+    width: 40vw;
     margin: 1rem auto;
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +27,32 @@ main.misc {
     text-align: justify;
 }
 
-.misc span {
+.misc-login span {
     font-weight: 800;
     color: #00a3ec;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form input {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+}
+
+.login-form button {
+    border: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #00a3ec;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+.login-form button:hover {
+    background-color: black;
 }

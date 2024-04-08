@@ -88,6 +88,18 @@ button.searchsite {
     list-style-type: none;
 }
 
+.login {
+    color: white;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+.logout:hover {
+    color: grey;
+}
+
 input.searchsite {
     padding: 0.3rem 4rem 0.3rem 0.3rem;
     background-color: #f6f2e8;
@@ -100,13 +112,13 @@ input.searchsite:focus {
     background-color: #d8f3ff;
 }
 
-a.mail, a.tel {
+a.mail, a.tel, .login a {
     text-decoration: none;
     color: white;
     transition: 0.5s all linear;
 }
 
-a.mail:hover, a.tel:hover {
+a.mail:hover, a.tel:hover, .login a:hover {
     color: #d7f2ff;
 }
 

@@ -38,18 +38,18 @@ div.igre {
     list-style-type: none;
 }
 
-a {
+.categories-container a {
     text-decoration: none;
     color: black;
     text-align: center;
 }
 
-a:hover {
+.categories-container a:hover {
     color: #9393eb;
     opacity: 80%;
 }
 
-li h3 {
+.categories-container li h3 {
     margin: 0 0 1rem 0;
 }
 

@@ -4,7 +4,9 @@ const AppContext = createContext({
     cart: [],
     setCart: () => {},
     handleAddToCart: () => {},
-    removeFromCart: () => {}
+    removeFromCart: () => {},
+    user: {},
+    setUser: () => {}
 })
 
 export {AppContext}
