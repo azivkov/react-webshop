@@ -10,10 +10,10 @@ import { faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
 
 function ProductsPage() {
   const priceFilter = [
-    { value: "do49", title: "Do 49€" },
-    { value: "50do199", title: "50€ - 199€" },
-    { value: "200do499", title: "200€ - 499€" },
-    { value: "iznad500", title: "Iznad 500€" },
+    { value: "do49", title: "Do 49€", minPrice: 0, maxPrice: 49.99 },
+    { value: "50do199", title: "50€ - 199€", minPrice: 50, maxPrice: 199.99 },
+    { value: "200do499", title: "200€ - 499€", minPrice: 200, maxPrice: 499.99 },
+    { value: "iznad500", title: "Iznad 500€", minPrice: 500, maxPrice: Infinity },
   ];
 
   const categoryFilter = [
@@ -34,13 +34,21 @@ function ProductsPage() {
   // console.log("objectParams", objectParams);
 
   const matchedProducts = productData.filter((product) => {
-    // console.log("product range", product.range);
-    // console.log("objectParams range", objectParams.range);
+    const selectedPriceFilter = priceFilter.find(
+      (filter) => filter.value === objectParams.cijena
+    );
+
+    const minPrice = selectedPriceFilter ? selectedPriceFilter.minPrice : 0;
+    const maxPrice = selectedPriceFilter ? selectedPriceFilter.maxPrice : Infinity;
+
     return (
-      (product.range === objectParams.cijena || !objectParams.cijena) &&
+      (product.price >= minPrice && product.price <= maxPrice) &&
       (product.category === objectParams.kategorija || !objectParams.kategorija)
     );
   });
+
+  // console.log("matchedProducts: ", matchedProducts)
+
 
   return (
     <main>
