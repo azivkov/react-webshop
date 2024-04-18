@@ -19,7 +19,6 @@ function CheckoutAddress({ title }) {
 
     useEffect(() => {
         if (formValid) {
-            console.log("Navigating to /order");
             window.location.href = "/order";
         }
     }, [formValid]);
