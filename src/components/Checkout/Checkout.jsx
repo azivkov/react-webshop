@@ -6,7 +6,7 @@ import { CheckoutCart } from './CheckoutCart';
 function Checkout({title}) {
     const checkoutForm = [
         {title: "Ime i prezime:", type: "text", id: "ime"},
-        {title: "E-mail adresa", type: "mail", id:"email"},
+        {title: "E-mail:", type: "mail", id:"email"},
         {title: "Kućna adresa:", type: "text", id: "adresa"},
         {title: "Grad:", type: "text", id: "grad"},
         {title: "Poštanski broj:", type: "number", id: "postbroj"},

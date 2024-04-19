@@ -24,7 +24,8 @@ function CheckoutAddress({ title, checkoutForm }) {
     }, [formValid]);
 
     const handleInputChange = (e) => {
-        const { name, value } = e.target;
+        const name = e.target.name;
+        const value = e.target.value;
         setFormValues({
             ...formValues,
             [name]: value
