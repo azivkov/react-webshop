@@ -17,7 +17,7 @@ import { DetailedBlogView } from "./components/Blog/DetailedBlogView";
 import { Contact } from "./components/Contact/Contact";
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./components/Checkout/Checkout";
-import { Order } from "./Order/Order";
+import { Order } from "./components/Order/Order";
 import { Cookies } from "./components/Misc/Cookies";
 import { Terms } from "./components/Misc/Terms";
 import { Privacy } from "./components/Misc/Privacy";
